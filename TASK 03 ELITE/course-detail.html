@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Player</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">E-Learn</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+    </ul>
+  </nav>
+
+  <section class="course-player">
+    <h2>Web Development - Lesson 1</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="progress-section">
+      <label for="progress">Progress: <span id="progress-percent">20%</span></label>
+      <progress id="progress" value="20" max="100"></progress>
+      <button onclick="increaseProgress()">Mark as Complete</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
